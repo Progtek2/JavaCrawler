@@ -27,7 +27,6 @@ http://nrkp3.no/filmpolitiet/category/spillanmeldelser/feed/
 http://p3.no/filmpolitiet/category/spill/feed/
 http://www.pressfire.no//rss/nyheter
 http://feeds.ign.com/ign/games-all?format=xml
-http://www.gamer.no/arkiv/artikler/?format=rss
 13--	"TV og medier"
 http://www.dagbladet.no/rss/tvogmedier/
 14--	Scene
