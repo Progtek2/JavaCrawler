@@ -155,12 +155,12 @@ public class RSSReaderDOM {
             	
         		
             	
-    				System.err.println("Upload to MYSql done...\n");
+    				System.err.println("\nUpload to MYSql done...\n");
     			}
             }
             else
             {
-            	System.err.println("Exists in MYSql..\n");
+            	System.err.println("\nExists in MYSql..\n");
             }
             conn.close(); 
 
@@ -190,22 +190,15 @@ public class RSSReaderDOM {
       }
     }
     
-    // Antar at siden XML-dokumentet er strukturert på en ordentlig måte (siden man har DOM-parsing) at
-    // exceptions ikke vil kunne skje. Av denne grunn ingen håndtering av exception, kun en "placeholder" som
-    // må være der for å kunne kompilere. Kallet til doErrorMessage() skal aldri kunne skje, men er lagt inn for å
-    // håndtere situasjoner som ennå ikke er kjent
     catch (Exception ex) {
-      // OBS! Nullpointerexceptions vil kunne skje fra getFirstChild() uten at dette er feil.
+      
       if (!(ex.getClass().equals(java.lang.NullPointerException.class)))
         doErrorMessage(ex);
     }
     return "";
   }
 
-  /**
-   * Feilmelding til konsoll
-   * @param e Exception
-   */
+ 
   private void doErrorMessage(Exception e) {
     System.out.println("========================================================");
     System.out.println("= ClassName: " + this.getClass().getName());
