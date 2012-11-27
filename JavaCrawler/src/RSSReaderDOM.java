@@ -33,8 +33,22 @@ public class RSSReaderDOM {
   private static RSSReaderDOM instance = null;
   private static String category;
   private static String last_id;
+  private Connection conn;
   
   private RSSReaderDOM() {
+	  try{
+	        Class.forName("com.mysql.jdbc.Driver").newInstance();
+	        conn = DriverManager.getConnection(dburl,"gruppe2","gruppe2");
+	        }
+	        catch (IllegalAccessException e)
+	        {System.out.println(e);}
+			catch(InstantiationException e)
+	        {System.out.println(e);}
+	        catch(ClassNotFoundException e)
+	        {System.out.println(e);}
+	  		catch(SQLException e)
+	  		{System.out.println(e);}
+	  
   }
 
   
@@ -82,22 +96,11 @@ public class RSSReaderDOM {
         
         System.out.println("Ingress:" + getElementValue(element, "description"));
         String desc = getElementValue(element, "description");
-        
-        
-        try{
-	        Class.forName("com.mysql.jdbc.Driver").newInstance();
-	        }
-	        catch (IllegalAccessException e)
-	        {System.out.println(e);}
-			catch(InstantiationException e)
-	        {System.out.println(e);}
-	        catch(ClassNotFoundException e)
-	        {System.out.println(e);}
-		
+
 		try
         { 
 
-            Connection conn = DriverManager.getConnection(dburl,"gruppe2","gruppe2"); 
+             
             
             String sql_Q ="SELECT * FROM news";
     		PreparedStatement query = conn.prepareStatement(sql_Q);
@@ -162,14 +165,17 @@ public class RSSReaderDOM {
             {
             	System.err.println("\nExists in MYSql..\n");
             }
-            conn.close(); 
+            
 
         } catch (Exception e) { 
             System.err.println("Got an exception! "); 
             System.err.println(e.getMessage()); 
         }
-        
-      }//for
+		 
+      }
+      //conn.close();
+      //for
+      
     }//try
     catch (Exception ex) {
       doErrorMessage(ex);
