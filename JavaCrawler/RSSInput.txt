@@ -1,0 +1,54 @@
+1--	Utenriks
+http://www.dagbladet.no/rss/utenriks
+2--	Innenriks
+http://www.vg.no/export/Alle/rdf.hbs?kat=innenriksnyheter
+http://www.dagbladet.no/rss/innenriks/
+3--	Sport
+http://www.vg.no/export/Alle/rdf.hbs?kat=sport
+http://www.dagbladet.no/rss/sport/
+4--	Fotball
+http://www.dagbladet.no/rss/premierleague/
+5-- 	Ski
+http://www.dagbladet.no/rss/langrenn/
+6-- 	Kultur
+http://www.nrk.no/kultur-og-underholdning/siste.rss
+7--	Sykling
+http://www.dagbladet.no/rss/sykkel/
+8--	Håndball
+http://www.handball.no/rss_news.asp?site=2
+9--	Film
+http://nrkp3.no/filmpolitiet/category/film/feed/
+10-- 	Musikk
+http://www.dagbladet.no/rss/musikk/
+11-- 	Litteratur
+http://www.dagbladet.no/rss/litteratur/
+12--	Spill
+http://nrkp3.no/filmpolitiet/category/spillanmeldelser/feed/
+http://p3.no/filmpolitiet/category/spill/feed/
+http://www.pressfire.no//rss/nyheter
+http://feeds.ign.com/ign/games-all?format=xml
+http://www.gamer.no/arkiv/artikler/?format=rss
+13--	"TV og medier"
+http://www.dagbladet.no/rss/tvogmedier/
+14--	Scene
+http://www.dagbladet.no/rss/scene/
+15--	Kunst
+http://www.dagbladet.no/rss/kunst/
+16--	Mat
+http://www.nrk.no/mat/siste.rss
+18--	"Data og teknologi"
+http://www.dn.no/rss/?section=dagensit 
+http://www.vg.no/export/Alle/rdf.hbs?kat=data
+http://www.dagbladet.no/rss/data/
+http://e24.no/rss2/?seksjon=it 
+19--	"Bil og trafikk"
+http://www.vegvesen.no/Om+Statens+vegvesen/Media/Siste+nyheter/rss-nasjonalt
+http://www.dagbladet.no/rss/bil/
+20--	Helse
+http://www.dagbladet.no/rss/helse/
+21--	"Sex og samliv"
+http://www.dagbladet.no/rss/sexogsamliv/
+22--	Reise
+http://www.dagbladet.no/rss/reise/
+23--	Økonomi
+http://e24.no/rss/?seksjon=ece_frontpage
