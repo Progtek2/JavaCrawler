@@ -10,6 +10,9 @@ public class main {
 	
 	public static void main(String[] args) 
 	{
+		
+		long startTime = System.currentTimeMillis();
+		
 		//RSSReaderDOM reader = RSSReaderDOM.getInstance();
 		RSSReader leser = new RSSReader();
 		
@@ -18,6 +21,10 @@ public class main {
 		terminator arnold = new terminator();
 		arnold.terminate();
 		
+		long endTime   = System.currentTimeMillis();
+		long totalTime = endTime - startTime;
+		
+		System.out.println("\n----------------------------------\nTime used: " + totalTime / 1000 + " sec");
 	    
 	    
 	}
