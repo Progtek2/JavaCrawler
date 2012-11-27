@@ -59,7 +59,7 @@ public class terminator
     					    					
     					PreparedStatement query2 = conn.prepareStatement(sql_delete);
     					query2.executeUpdate();
-    					System.out.println("Astalavista id " + id + " with Pubdate: " + pubDate);
+    					System.out.println("Hasta la vista id " + id + " with Pubdate: " + pubDate);
     				}
     			}
     		System.err.println("\nOLDER NEWS THEN 24 HOURS TERMINATED!! - I'LL BE BACK!\n");

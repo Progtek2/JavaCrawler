@@ -20,7 +20,7 @@ public class RSSReader
 		try{
 									//"C://Users//Anders//git//JavaCrawler//JavaCrawler//RSSInput.txt"
 									// "C://Users//MikaelLaptop//RSSInput.txt" <-- eksempel
-		fis = new FileInputStream("..//RSSInput.txt"); //Erstatt med ny filplassering
+		fis = new FileInputStream("C://Users//Mikael//RSSInput.txt"); //Erstatt med ny filplassering
 		br = new BufferedReader(new InputStreamReader(fis));
 		
 		while ((line = br.readLine()) != null) {
