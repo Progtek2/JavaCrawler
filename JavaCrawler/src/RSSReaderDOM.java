@@ -125,7 +125,7 @@ public class RSSReaderDOM {
     			
     			if(newtime > pubtime)
     			{
-    				System.err.println("\nToo old for the datebase.\n");
+    				System.err.println("\nToo old for the database.\n");
     			}
     			
     			else 
